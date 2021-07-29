@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ext="clr-namespace:UITestDemo.MarkupExtensions"
+             x:Class="UITestDemo.MainPage">
+
+    <StackLayout Margin="20">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Accessibility!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" AutomationProperties.IsInAccessibleTree="True"/>
+        </Frame>
+        <Label AutomationId="{ext:UITestMode Id=EntryLabelId}" Text="What's your name?" AutomationProperties.IsInAccessibleTree="True"/>
+        <Entry AutomationId="{ext:UITestMode Id=UsernameEntryId}" Text="{Binding Username}" AutomationProperties.IsInAccessibleTree="True" AutomationProperties.HelpText="Enter your name"/>
+        <Label AutomationId="{ext:UITestMode Id=UsernameLabelId}" Text="{Binding Username}" AutomationProperties.IsInAccessibleTree="True"/>
+        <Label AutomationId="{ext:UITestMode Id=DeviceLabelId}" Text="What type of phone do you have?" AutomationProperties.IsInAccessibleTree="True"/>
+        <RadioButton AutomationId="{ext:UITestMode Id=AndroidRadioButtonId}" AutomationProperties.IsInAccessibleTree="True" Content="Android" AutomationProperties.Name="Android"/>
+        <RadioButton AutomationId="{ext:UITestMode Id=iOSRadioButtonId}" AutomationProperties.IsInAccessibleTree="True" Content="iOS" AutomationProperties.Name="iOS"/>
+        <Grid RowDefinitions="1" ColumnDefinitions="1,*">
+            <Button AutomationId="ToggleTestMode" Text="Change Mode" TextColor="Transparent" BackgroundColor="Transparent" Clicked="ToggleTestModeButton_Clicked" AutomationProperties.IsInAccessibleTree="False"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
