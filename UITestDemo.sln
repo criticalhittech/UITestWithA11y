@@ -5,9 +5,14 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITestDemo.Android", "UITestDemo\UITestDemo.Android\UITestDemo.Android.csproj", "{34088FB8-EAC5-4D30-91A8-B4C05F158BC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITestDemo", "UITestDemo\UITestDemo\UITestDemo.csproj", "{860279DF-4697-48DA-9F3C-305CD4A929D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UITestDemo", "UITestDemo\UITestDemo\UITestDemo.csproj", "{860279DF-4697-48DA-9F3C-305CD4A929D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITest.Test", "UITest.Test\UITest.Test.csproj", "{1EF38FDB-44D2-4A95-9BAC-17E1636C6931}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{755AF809-EC12-47AC-85B8-F20E1A174DD6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
